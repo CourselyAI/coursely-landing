@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursely — AI-Powered Student Planner</title>
+    <meta name="description" content="Plan smarter, study better, stress less. Coursely is the all-in-one student planner with AI-powered study schedules, grade tracking, and focus tools.">
+    <meta name="keywords" content="student planner, study app, grade calculator, GPA tracker, study schedule, focus timer, college app, university planner">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coursely — AI-Powered Student Planner">
+    <meta property="og:description" content="Plan smarter, study better, stress less. The all-in-one student planner app.">
+    <meta property="og:image" content="images/hero-mockup.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coursely — AI-Powered Student Planner">
+    <meta name="twitter:description" content="Plan smarter, study better, stress less.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Coursely</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#waitlist" class="nav-cta-btn">Join Waitlist</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="#waitlist" class="mobile-link cta">Join Waitlist</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-dot"></span>
+                    Coming Soon to the App Store
+                </div>
+                <h1 class="hero-title animate-fade-in-up">
+                    Plan Smarter.<br>
+                    <span class="gradient-text">Study Better.</span><br>
+                    Stress Less.
+                </h1>
+                <p class="hero-subtitle animate-fade-in-up delay-1">
+                    The all-in-one student planner that organizes your assignments, generates AI-powered study schedules, tracks your grades, and helps you stay focused.
+                </p>
+                <div class="hero-cta animate-fade-in-up delay-2">
+                    <form class="hero-form" id="heroForm" action="https://formspree.io/f/xlgoppnw" method="POST">
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Enter your email" required class="hero-input" id="heroEmail">
+                            <button type="submit" class="hero-btn">
+                                <span class="btn-text">Join Waitlist</span>
+                                <span class="btn-icon">→</span>
+                            </button>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Coursely Waitlist Signup!">
+                        <input type="hidden" name="source" value="hero">
+                    </form>
+                    <p class="hero-note">🔒 No spam. Just a launch-day notification.</p>
+                </div>
+                <div class="social-proof animate-fade-in-up delay-3">
+                    <div class="avatars">
+                        <div class="avatar" style="background: linear-gradient(135deg, #7c5ce0, #a78bfa);">S</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">M</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #10b981, #34d399);">A</div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #f59e0b, #fbbf24);">J</div>
+                    </div>
+                    <p class="social-proof-text">Join <span id="waitlistCount" class="counter">0</span>+ students on the waitlist</p>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in-up delay-2">
+                <img src="images/hero-mockup.png" alt="Coursely app preview showing dashboard, planner, and grade calculator" class="hero-mockup-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos / Trust Badges -->
+    <section class="trust-strip">
+        <div class="trust-container">
+            <p class="trust-label">Built for students at</p>
+            <div class="trust-logos">
+                <span class="trust-item">🎓 Universities</span>
+                <span class="trust-divider">•</span>
+                <span class="trust-item">📖 Colleges</span>
+                <span class="trust-divider">•</span>
+                <span class="trust-item">🏫 High Schools</span>
+                <span class="trust-divider">•</span>
+                <span class="trust-item">📝 Online Programs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need to<br><span class="gradient-text">ace your semester</span></h2>
+                <p class="section-subtitle">From daily planning to grade tracking — Coursely handles the heavy lifting so you can focus on what matters.</p>
+            </div>
+
+            <!-- Feature 1: Dashboard -->
+            <div class="feature-row animate-on-scroll">
+                <div class="feature-text">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Smart Dashboard</h3>
+                    <p class="feature-desc">See everything at a glance. Your next assignment, upcoming deadlines, and focus sessions — all on one clean home screen.</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> "Up Next" focus card with one-tap start</li>
+                        <li><span class="check">✓</span> Due today & overdue counters</li>
+                        <li><span class="check">✓</span> Built-in focus session timer</li>
+                        <li><span class="check">✓</span> Upcoming deadlines at a glance</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="images/feature-dashboard.png" alt="Coursely dashboard with schedule, progress, and focus timer" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Feature 2: Study Planner -->
+            <div class="feature-row reverse animate-on-scroll">
+                <div class="feature-text">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Smart Study Planner</h3>
+                    <p class="feature-desc">Plan your week around school, work, sports, and your real life. Set your availability, choose focus block length, and let Coursely build your study schedule.</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> Auto-generated study sessions</li>
+                        <li><span class="check">✓</span> Weekly availability grid</li>
+                        <li><span class="check">✓</span> Customizable focus block length</li>
+                        <li><span class="check">✓</span> Fits around your real schedule</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="images/feature-planner.png" alt="Coursely weekly study planner with color-coded sessions" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Feature 3: Grade Calculator -->
+            <div class="feature-row animate-on-scroll">
+                <div class="feature-text">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Grade Calculator</h3>
+                    <p class="feature-desc">Enter your assignments, quizzes, and exams with their weights. See your current weighted grade instantly and plan what you need to hit your target.</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> Weighted grade calculation</li>
+                        <li><span class="check">✓</span> GPA tracking across courses</li>
+                        <li><span class="check">✓</span> Final grade calculator</li>
+                        <li><span class="check">✓</span> Save and manage grade sheets</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="images/feature-grades.png" alt="Coursely grade calculator with GPA and What-If calculator" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Get started in<br><span class="gradient-text">3 simple steps</span></h2>
+            </div>
+            <div class="steps-grid animate-on-scroll">
+                <div class="step-card">
+                    <div class="step-icon">📋</div>
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Add Your Courses</h3>
+                    <p class="step-desc">Enter your classes, assignments, and deadlines. Coursely organizes everything into a clean timeline.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="#d4d4d8" stroke-width="2" stroke-dasharray="4,4"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">🤖</div>
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Set Your Goals</h3>
+                    <p class="step-desc">Tell us your study preferences and target grades. Our AI builds a personalized plan around your life.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="#d4d4d8" stroke-width="2" stroke-dasharray="4,4"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">🚀</div>
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Crush Your Semester</h3>
+                    <p class="step-desc">Follow your study schedule, track your grades in real-time, and watch your GPA climb.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="section-container">
+            <div class="stats-grid animate-on-scroll">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Day Free Trial</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Core Features</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-label">Min Focus Sessions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="7">0</div>
+                    <div class="stat-label">Day Schedule Planner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Got questions?<br><span class="gradient-text">We've got answers.</span></h2>
+            </div>
+            <div class="faq-list animate-on-scroll">
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-1">
+                        <span>When does Coursely launch?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're launching on the App Store very soon! Join the waitlist to be the first to know — you'll get an email the moment it's live.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-2">
+                        <span>How much does Coursely cost?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Coursely comes with a 3-day free trial so you can try every feature risk-free. After the trial, a subscription unlocks the full experience. You can cancel anytime before the trial ends and you won't be charged.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-3">
+                        <span>What devices does it support?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Coursely is built for iPhone and will be available on the App Store. iPad and other platform support may come in the future based on demand.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-4">
+                        <span>How does the AI study planner work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You enter your courses, deadlines, availability, and study preferences. Coursely's algorithm analyzes all of this to create an optimized weekly study schedule that balances your workload and prioritizes upcoming deadlines.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-5">
+                        <span>Can I track grades for multiple courses?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Coursely's grade calculator supports unlimited courses with weighted grades, real-time GPA calculation, and a What-If calculator to plan for upcoming exams and assignments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="waitlist">
+        <div class="section-container">
+            <div class="cta-card animate-on-scroll">
+                <h2 class="cta-title">Ready to take control of<br>your semester?</h2>
+                <p class="cta-subtitle">Join the waitlist and be the first to download Coursely when it launches.</p>
+                <form class="cta-form" id="ctaForm" action="https://formspree.io/f/xlgoppnw" method="POST">
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your best email" required class="hero-input" id="ctaEmail">
+                        <button type="submit" class="hero-btn">
+                            <span class="btn-text">Join Waitlist</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Coursely Waitlist Signup!">
+                    <input type="hidden" name="source" value="footer-cta">
+                </form>
+                <p class="hero-note">🔒 We'll only email you when Coursely is live. No spam, ever.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Coursely</span>
+                    <p class="footer-tagline">AI-powered student planner</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#waitlist">Join Waitlist</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="TikTok" id="social-tiktok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.11v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.78a8.21 8.21 0 0 0 4.76 1.52V6.85a4.84 4.84 0 0 1-1-.16z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter / X" id="social-twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Coursely. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <div class="modal-emoji">🎉</div>
+            <h3 class="modal-title">You're on the list!</h3>
+            <p class="modal-text">We'll send you an email the moment Coursely hits the App Store. Get ready to crush your semester!</p>
+            <button class="modal-btn" id="modalClose">Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
